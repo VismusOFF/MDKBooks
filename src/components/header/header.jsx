@@ -1,7 +1,7 @@
 import { Link, useNavigate } from "react-router-dom";
 import { doSignOut } from "../../assets/auth";
 import { useAuth } from "../../context";
-import './Header.css';
+import './header.css';
 
 const Header = () => {
     const navigate = useNavigate();
