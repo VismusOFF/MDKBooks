@@ -5,10 +5,10 @@ import './Request.css'
 
 const RequestForm = () => {
   const [name, setName] = useState('');
-  const [author, setAuthor] = useState('');
-  const [sosto, setSosto] = useState('');
+  const [model, setModel] = useState('');
+  const [type, setType] = useState('');
   const [date, setDate] = useState('');
-  const [category, setCategory] = useState('');
+  const [count, setCount] = useState('');
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -16,10 +16,10 @@ const RequestForm = () => {
     const newRequestRef = push(requestsRef);
     set(newRequestRef, {
       название: name,
-      автор: author,
-      состояние: sosto,
+      модель: model,
+      состояние: type,
       дата: date,
-      категория: category,
+      категория: count,
       статус: 'новая'
     });
   };
@@ -37,21 +37,21 @@ const RequestForm = () => {
       <input
         className='inp1'
         type="text"
-        value={author}
-        onChange={(e) => setAuthor(e.target.value)}
-        placeholder="Автор"
+        value={model}
+        onChange={(e) => setModel(e.target.value)}
+        placeholder="Модель"
         required
       />
       <input
         className='inp1'
         type="text"
-        value={sosto}
-        onChange={(e) => setSosto(e.target.value)}
-        placeholder="Состояние"
+        value={type}
+        onChange={(e) => setType(e.target.value)}
+        placeholder="Тип поломки"
         required
       />
       <input
-        className='inp1'
+        className='inpDate'
         type="date"
         value={date}
         onChange={(e) => setDate(e.target.value)}
@@ -61,9 +61,9 @@ const RequestForm = () => {
       <input
         className='inp1'
         type="text"
-        value={category}
-        onChange={(e) => setCategory(e.target.value)}
-        placeholder="Категория"
+        value={count}
+        onChange={(e) => setCount(e.target.value)}
+        placeholder="Количество"
         required
       />
       <button className='button-submit' type="submit">Отправить заявку</button>

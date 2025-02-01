@@ -23,17 +23,17 @@
     position: relative;
     height: 28px;
     width: 150px;
-  }
+}
   
 select {
     width: 100%;
     background-color: #ffffff;
     border: 1px solid #ced4da;
     border-radius: 4px;
-    appearance: none; /* Убираем стандартный стиль select в разных браузерах */
+    appearance: none;
     -webkit-appearance: none;
     -moz-appearance: none;
-  }
+}
   
 select::after {
     content: '▼';
@@ -41,20 +41,21 @@ select::after {
     top: 50%;
     right: 16px;
     transform: translateY(-50%);
-    pointer-events: none; /* Чтобы клики проходили сквозь этот элемент */
+    pointer-events: none;
     color: #6c757d;
-  }
+}
   
-  /* Стили для option не могут быть напрямую изменены, но вы можете стилизовать select */
 option {
     background-color: #f8f9fa;
-  }
+}
   
-  /* Стили для состояния фокуса */
-  select:focus {
+select:focus {
     outline: none;
     border-color: #80bdff;
     border: 2px solid #5AB0FF;
-  }
+}
 
+select {
+    width: 20px;
+}
 

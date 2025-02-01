@@ -1,6 +1,5 @@
 import React from "react";
 import { useAuth } from "../../context";
-import AdminTable from "../table/table";
 import RequestForm from "../request/request";
 import "./home.css"
 

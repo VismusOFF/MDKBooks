@@ -9,15 +9,17 @@ const Header = () => {
 
     return (
         <nav className="header-nav">
-            <div className="dev">Разработал <a href="https://vismusoff.netlify.app/">VismusOFF</a></div>
             <div className="nav-links">
+            <div className="dev">Разработал <a href="https://vismusoff.netlify.app/">VismusOFF</a></div>
                 {
                     userLoggedIn
                     ?
                     <>
-                        <button onClick={() => { doSignOut().then(() => { navigate('/login') }) }}>Выйти</button>
-                        <Link to={'/table'}>Таблица</Link>
-                        <Link to={'/home'}>Домой</Link>
+                        <div className="leftLinks">
+                            <Link to={'/table'}>Таблица</Link>
+                            <Link to={'/home'}>Домой</Link>
+                        </div>
+                            <button className="btnLeave" onClick={() => { doSignOut().then(() => { navigate('/login') }) }}>Выйти</button>
                     </>
                     :
                     <>

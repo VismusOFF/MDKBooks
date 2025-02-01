@@ -4,43 +4,55 @@ body {
 }
 
 .header-nav {
-    display: flex; /* Используем flexbox для выравнивания */
-    align-items: center; /* Центрируем по вертикали */
-    background-color: #1e1e1e; /* Темный фон для навигации */
-    color: #ffffff; /* Белый цвет текста */
-    padding: 10px 20px; /* Отступы внутри навигации */
+    display: flex;
+    align-items: center;
+    background-color: #1e1e1e;
+    color: #ffffff;
+    padding: 10px 20px;
 }
 
 .dev {
-    font-size: 20px; /* Размер шрифта для имени разработчика */
+    font-size: 20px;
 }
 
 .nav-links {
-    display: flex; /* Используем flexbox для выравнивания ссылок и кнопок */
-    align-items: center; /* Центрируем по вертикали */
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+    width: 100%;
 }
 
 nav a {
-    color: #ffffff; /* Цвет ссылок */
-    text-decoration: none; /* Убираем подчеркивание */
-    margin: 0 15px; /* Отступы между ссылками */
-    transition: color 0.3s; /* Плавный переход цвета при наведении */
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    transition: color 0.3s;
 }
 
 nav a:hover {
-    color: #007bff; /* Цвет ссылок при наведении */
+    color: #007bff;
 }
 
 nav button {
-    background-color: #007bff; /* Цвет кнопки */
-    color: #ffffff; /* Цвет текста кнопки */
-    border: none; /* Убираем границу */
-    border-radius: 4px; /* Скругление углов */
-    padding: 10px 15px; /* Отступы внутри кнопки */
-    cursor: pointer; /* Курсор при наведении */
-    transition: background-color 0.3s; /* Плавный переход фона кнопки */
+    background-color: #007bff;
+    color: #ffffff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: background-color 0.3s;
 }
 
 nav button:hover {
-    background-color: #0056b3; /* Цвет кнопки при наведении */
+    background-color: #0056b3;
+}
+
+.btnLeave {
+    margin-left: 20px;
+}
+
+.leftLinks {
+    display: flex;
+    align-items: center;
+    margin-right: auto;
 }

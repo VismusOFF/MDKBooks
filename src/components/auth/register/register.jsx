@@ -8,7 +8,7 @@ import './register.css'
 const Register = () => {
     
     const navigate = useNavigate()
-    const { userLoggedIn } = useAuth(); // Получите userLoggedIn из контекста
+    const { userLoggedIn } = useAuth(); // userLoggedIn из контекста
 
     const [email, setEmail] = useState()
     const [password, setPassword] = useState()

@@ -93,10 +93,10 @@ const AdminTable = () => {
   // Колонки для DataTable
   const columns = [
     { name: 'Название', selector: row => row.название, sortable: true },
-    { name: 'Автор', selector: row => row.автор, sortable: true },
-    { name: 'Состояние', selector: row => row.состояние, sortable: true },
+    { name: 'Модель', selector: row => row.автор, sortable: true },
+    { name: 'Тип поломки', selector: row => row.состояние, sortable: true },
     { name: 'Дата', selector: row => row.дата, sortable: true },
-    { name: 'Категория', selector: row => row.категория, sortable: true },
+    { name: 'Количество', selector: row => row.категория, sortable: true },
     { name: 'Статус', selector: row => row.статус, sortable: true, cell: row => (
       <select className='select-container' value={row.статус} onChange={(e) => handleStatusChange(row.id, e.target.value)}>
         <option value="новая">Новая</option>
@@ -121,7 +121,7 @@ const AdminTable = () => {
             defaultSortAsc={false}
             pagination
             paginationPerPage={10}
-            paginationRowsPerPageOptions={[5, 10, 15]}
+            paginationRowsPerPageOptions={[5, 10, 15, 20, 25]}
             customStyles={tableCustomStyles}
         />
     </div>
